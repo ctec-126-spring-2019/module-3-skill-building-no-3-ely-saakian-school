@@ -1,46 +1,109 @@
 // sb3.js
 // The verse1(), verse2(), chorus1() and chorus2() are provided to you. You can change the function names and add additonal ones as needed. Be sure to follow the starter code that has been supplied.
+// Сверху - вниз я глазами раздеваю эту мисс
+// Сверху - вниз она взглядом говорит остановись
+// А я нет, на рассвете танцы в ультрафиолете
+// Мне напрочь сносит крышу будто я в кабриолете
 
-function verse1() {
-    let output = ''
-    // your code here
+// Это че там за медведи топчутся рядом с тобой
+// Леди are you ready, давай сольемся с толпой
+// И на выход через черный, пока нас не спалили
+// Нет, но если передумаешь просто позвони мне
 
-    return output
+// Но я не оставлю тебе свой номер
+// Ты всегда найти сможешь меня у бара
+// Ты сияешь ярче всех на танцполе
+// Ведь таких как ты тут зая мало
+
+// Но я не оставлю тебе свой номер
+// Ты всегда найти сможешь меня у бара
+// Ты сияешь ярче всех на танцполе
+// Ведь таких как ты тут зая мало
+
+// Чего ждем ты объясни мне
+// А если честно до весны ни-ни
+// Я на тебя настроил сканер
+// Чего он тут руки распускает а
+
+// Только скажи, просто подай мне знак
+// Но тебе нравиться играть со мной, окей пусть будет так
+// Бармен еще лонкайл детка, предложение в силе
+// И как только наиграешься то позвони мне
+
+// Но я не оставлю тебе свой номер
+// Ты всегда найти сможешь меня у бара
+// Ты сияешь ярче всех на танцполе
+// Ведь таких как ты тут зая мало
+
+// Но я не оставлю тебе свой номер
+// Ты всегда найти сможешь меня у бара
+// Ты сияешь ярче всех на танцполе
+// Ведь таких как ты тут зая мало
+
+// Зая мало
+// Зая мало
+// Зая мало
+// Зая, зая, зая
+// Читать на сайте: https://text-lyrics.ru/z1/zomba/19687-zomb-zayamalo-text-pesni.html
+function verse1 () {
+  const output =
+  `Сверху - вниз я глазами раздеваю эту мисс<br>
+  Сверху - вниз она взглядом говорит остановись<br>
+  А я нет, на рассвете танцы в ультрафиолете<br>
+  Мне напрочь сносит крышу будто я в кабриолете<br><br>
+  
+  Это че там за медведи топчутся рядом с тобой<br>
+  Леди are you ready, давай сольемся с толпой<br>
+  И на выход через черный, пока нас не спалили<br>
+  Нет, но если передумаешь просто позвони мне<br><br>`
+
+  return output
 }
 
-function verse2() {
-    let output = ''
-    // your code here
+function verse2 () {
+  const output =
+  `Чего ждем ты объясни мне<br>
+  А если честно до весны ни-ни<br>
+  Я на тебя настроил сканер<br>
+  Чего он тут руки распускает а<br><br>
+  
+  Только скажи, просто подай мне знак<br>
+  Но тебе нравиться играть со мной, окей пусть будет так<br>
+  Бармен еще лонкайл детка, предложение в силе<br>
+  И как только наиграешься то позвони мне<br><br>`
 
-    return output
+  return output
 }
 
-function chorus1() {
-    let output = ''
-    // your code here
-
-    return output
+function chorus1 () {
+  const output =
+  `Но я не оставлю тебе свой номер<br>
+  Ты всегда найти сможешь меня у бара<br>
+  Ты сияешь ярче всех на танцполе<br>
+  Ведь таких как ты тут зая мало<br><br>`
+  return output
 }
 
-function chorus2() {
-    let output = ''
-    // your code here
+function chorus2 () {
+  const output =
+  `Зая мало<br>
+  Зая мало<br>
+  Зая мало<br>
+  Зая, зая, зая<br><br>`
 
-    return output
+  return output
 }
 
+function main () {
+  const finalOutput = verse1() + chorus1() + chorus1() + verse2() + chorus1() + chorus1() + chorus2()// used to build lyrics string
+  // call verse and chorus functions
+  // each verse/chorus should return text including HTML paragraph tags
 
-
-function main() {
-    let finalOutput = '' // used to build lyrics string
-    // call verse and chorus functions
-    // each verse/chorus should return text including HTML paragraph tags
-
-    // do not modify the statement below
-    // it will take 
-    document.getElementById('lyrics').innerHTML = finalOutput
+  // do not modify the statement below
+  // it will take
+  document.getElementById('lyrics').innerHTML = finalOutput
 }
 
 window.onload = function () {
-    main()
+  main()
 }
